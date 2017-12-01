@@ -10,6 +10,8 @@ public class MiniProjects {
 	static int firstFibonacciNumber = 1;
 	static int secondFibonacciNumber = 1;
 	static int fibonacciNumber = 1;
+	static int endNumber;
+	static int[] mergeArray = new int[8];
 	
 	public static void getPi() {
 		
@@ -70,11 +72,9 @@ public class MiniProjects {
 		int number = scan.nextInt();
 		System.out.println("");
 		
-		if (number > 100 || number < 0) {
-			
+		if (number > 100 || number < 0)
 			System.out.println("\nOut of Bounds Exception!");
-			
-		} else {
+		else {
 		
 			System.out.print("The Fibonacci Sequence containing " + number + " number(s) is:");
 			
@@ -88,18 +88,64 @@ public class MiniProjects {
 			firstFibonacciNumber = fibonacciNumber;
 			
 		}
+		
 		System.out.print(".");
+		
 		}
 	
 	}
 	
+	public static void collatzConjecture() {
+	
+		System.out.print("Which number would you like to be represented in the Collatz Conjecture? ");
+		int endNumber = scan.nextInt();
+		int count = 0;
+		int userInput = endNumber;
+		
+		while (endNumber > 1) {
+ 			if (endNumber <= 1)
+				System.out.println("\nThe number must be greater than one.");
+			else if (endNumber % 2 == 0) 
+				endNumber /= 2;
+			else if (endNumber % 2 != 0)
+				endNumber = endNumber * 3 + 1;
+			count++;
+			
+		}
+
+		System.out.println("\nThe number " + userInput + " took " + count + " steps in the Collatz Conjecture.\n");
+
+	}
+		
+		private static void mergeSort() {
+			
+			for (int i = 0; i < 8; i++) {
+				
+				mergeArray[i] = (int) (Math.random() * 101);
+				
+				System.out.println(mergeArray[i]);
+				
+		}
+			
+			
+			
+	}
+	
 		public static void main(String[] args) {
+			
+			System.out.println("\nThe following are a series of mini-projects that relate to numbers.\n\n*");		
 			
 			getPi();
 			
 			getE();
 			
 			getFibonacci();
+			
+			System.out.println("\n\n*\n\nThe following are a series of mini-projects that relate to algorithms.\n\n*\n");		
+			
+			collatzConjecture();
+			
+			mergeSort();
 			
 		}
 	
