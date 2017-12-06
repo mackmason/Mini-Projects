@@ -1,9 +1,9 @@
 Mini-Projects
 =============
 
-A series "Mini-Projects" that have been completed by [Mack Mason](https://github.com/mackmason). See [Projects](https://github.com/mackmason/Projects.git) for the problems and [Solutions](https://github.com/karan/Projects-Solutions.git) for the solutions. [Karan Goel](https://github.com/karan) is the author of these problems.
+A series "Mini-Projects" that have been completed by me, [Mack Mason](https://github.com/mackmason). See [Projects](https://github.com/mackmason/Projects.git) for the problems and [Solutions](https://github.com/karan/Projects-Solutions.git) for the solutions. [Karan Goel](https://github.com/karan) is the author of these problems.
 
-The problems that I have completed are listed below divided into categories.
+The problems that I have completed are listed below, divided into categories.
 
 ## Numbers
 
